@@ -10,7 +10,7 @@ It is intentionally lightweight: in-memory Pandas + a one-page Streamlit view.
 
 ## Live demo
 
-- Streamlit app: **PASTE_LINK_HERE**
+- Streamlit app: https://quarterly-health-bulletin-automation-system.streamlit.app/
 
 ## What’s inside
 
@@ -90,21 +90,4 @@ python -m streamlit run streamlit_app.py --server.port 8502
 
 ## Output demonstration
 
-For a quick “proof” artifact without running Streamlit, open the latest metrics markdown output in `outputs/`, e.g.:
-
-- `outputs/phase3_metrics_2024Q4.md`
-
-## Deploy (how the demo link was produced)
-
-The demo link can be hosted using Streamlit Community Cloud:
-
-1. Push this repo to GitHub
-2. Go to <https://share.streamlit.io> and connect your GitHub repo
-3. Set the app entrypoint to `streamlit_app.py`
-4. Deploy
-
-Streamlit Cloud will install `requirements.txt` and host a shareable URL you can include in your submission.
-
-## Notes you can defend in an interview
-
-See: [DEFENSE_NOTES.md](DEFENSE_NOTES.md)
+The deployed app reads `outputs/phase2_joined_quarterly.csv`. If you want to regenerate it locally, run `python phase2_etl.py`.
