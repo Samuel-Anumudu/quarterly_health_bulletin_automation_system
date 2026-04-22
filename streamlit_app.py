@@ -24,7 +24,6 @@ def safe_rate_pct(numer: pd.Series, denom: pd.Series) -> float:
         return float("nan")
     return float(numer.sum()) / d * 100.0
 
-
 def load_phase2() -> pd.DataFrame:
     if "phase2_df" not in st.session_state:
         st.session_state["phase2_df"] = pd.read_csv(PHASE2_CSV)
@@ -97,7 +96,7 @@ def validate_phase2(df: pd.DataFrame) -> tuple[list[str], list[str]]:
             mn = float(s.min(skipna=True))
             mx = float(s.max(skipna=True))
             if mn < 0 or mx > 100:
-                warnings.append(f"{c} has values outside 0–100 (min={mn:.1f}, max={mx:.1f}).")
+                warnings.append(f"{c} has values outside 0-100 (min={mn:.1f}, max={mx:.1f}).")
 
     for c in ["total_deliveries", "stillbirths"]:
         if c not in df.columns:
@@ -112,7 +111,7 @@ def validate_phase2(df: pd.DataFrame) -> tuple[list[str], list[str]]:
 def main() -> None:
     st.set_page_config(page_title="Quarterly Health Bulletin (Prototype)", layout="wide")
 
-    # This is intentionally a “thin” UI: one page that reads a prepared dataset and displays the headline metrics.
+    # This is intentionally a "thin" UI: one page that reads a prepared dataset and displays the headline metrics.
     st.title("Quarterly Health Bulletin (Prototype)")
     st.caption("Minimal view: one quarter, key metrics, and a small set of tables/charts.")
 
@@ -262,7 +261,7 @@ def main() -> None:
     st.bar_chart(chart_df)
 
     with st.expander("Maternal indicator details (stillbirth rate)", expanded=False):
-        st.caption("Definition: stillbirths / total_deliveries × 100 (facility-level).")
+        st.caption("Definition: stillbirths / total_deliveries x 100 (facility-level).")
         hi10_sb = df_q.sort_values(["stillbirth_rate_pct", "facility_name"], ascending=[False, True]).head(10)
         st.dataframe(
             hi10_sb.loc[
@@ -271,7 +270,7 @@ def main() -> None:
         )
 
     with st.expander("Performance follow-up (HMIS completeness)", expanded=False):
-        st.caption("HMIS completeness is stored as 0–100 in Phase 2.")
+        st.caption("HMIS completeness is stored as 0-100 in Phase 2.")
         if len(referral_feedback) > 0:
             st.write(f"Referral feedback rate (mean): {referral_feedback.mean(skipna=True):.1f}")
         st.dataframe(
