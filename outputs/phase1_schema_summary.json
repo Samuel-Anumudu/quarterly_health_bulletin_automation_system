@@ -1,0 +1,2606 @@
+{
+  "files": {
+    "clinical_neonatal.csv": {
+      "nrows": 1404,
+      "ncols": 17,
+      "columns": [
+        "facility_id",
+        "reporting_month",
+        "total_deliveries",
+        "live_births",
+        "neonatal_deaths_0_7d",
+        "neonatal_deaths_8_28d",
+        "stillbirths",
+        "death_birth_asphyxia",
+        "death_prematurity",
+        "death_sepsis",
+        "death_congenital",
+        "death_other",
+        "avg_gestational_age",
+        "preterm_births_28_32w",
+        "preterm_births_32_37w",
+        "apgar_less_7_at_5min",
+        "birth_weight_less_2500g"
+      ],
+      "facility_id_candidates": [
+        {
+          "column": "facility_id",
+          "score": 6.583,
+          "reasons": [
+            "name_id_hints=2",
+            "id_value_rate=1.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.08"
+          ]
+        },
+        {
+          "column": "birth_weight_less_2500g",
+          "score": 0.555,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.05"
+          ]
+        },
+        {
+          "column": "preterm_births_32_37w",
+          "score": 0.541,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.04"
+          ]
+        },
+        {
+          "column": "apgar_less_7_at_5min",
+          "score": 0.524,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.02"
+          ]
+        },
+        {
+          "column": "preterm_births_28_32w",
+          "score": 0.518,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.02"
+          ]
+        }
+      ],
+      "join_suggestions_against_facilities": [
+        {
+          "facilities_column": "facility_id",
+          "other_column": "facility_id",
+          "match_rate": 1.0
+        }
+      ],
+      "patient_volume_candidates": [
+        {
+          "column": "total_deliveries",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "live_births",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "stillbirths",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "death_birth_asphyxia",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "preterm_births_28_32w",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "preterm_births_32_37w",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "birth_weight_less_2500g",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "maternal_indicator_candidates": [
+        {
+          "column": "stillbirths",
+          "score": 5.25,
+          "reasons": [
+            "name_hints=2",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "total_deliveries",
+          "score": 3.25,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "live_births",
+          "score": 3.25,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "death_birth_asphyxia",
+          "score": 3.25,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "preterm_births_28_32w",
+          "score": 3.25,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "preterm_births_32_37w",
+          "score": 3.25,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "birth_weight_less_2500g",
+          "score": 3.25,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "reporting_performance_candidates": [
+        {
+          "column": "reporting_month",
+          "score": 2.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=0.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "total_deliveries",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "live_births",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatal_deaths_0_7d",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatal_deaths_8_28d",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "stillbirths",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "death_birth_asphyxia",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "column_profiles": {
+        "facility_id": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 0.083,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 1.0,
+          "sample_values": [
+            "NYA001",
+            "NYA002",
+            "NYA003",
+            "NYA004",
+            "NYA005"
+          ]
+        },
+        "reporting_month": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 10,
+          "uniqueness_ratio": 0.007,
+          "numeric_rate": 0.0,
+          "datetime_rate": 1.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2024-01",
+            "2024-03",
+            "2024-04",
+            "2024-05",
+            "2024-06"
+          ]
+        },
+        "total_deliveries": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 304,
+          "uniqueness_ratio": 0.217,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.731,
+          "sample_values": [
+            "258",
+            "85",
+            "325",
+            "437",
+            "109"
+          ]
+        },
+        "live_births": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 299,
+          "uniqueness_ratio": 0.213,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.699,
+          "sample_values": [
+            "255",
+            "83",
+            "313",
+            "426",
+            "107"
+          ]
+        },
+        "neonatal_deaths_0_7d": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 13,
+          "uniqueness_ratio": 0.009,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "6",
+            "5",
+            "10",
+            "4",
+            "9"
+          ]
+        },
+        "neonatal_deaths_8_28d": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 6,
+          "uniqueness_ratio": 0.004,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "3",
+            "1",
+            "4",
+            "0"
+          ]
+        },
+        "stillbirths": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 20,
+          "uniqueness_ratio": 0.014,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "3",
+            "2",
+            "12",
+            "11",
+            "5"
+          ]
+        },
+        "death_birth_asphyxia": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 6,
+          "uniqueness_ratio": 0.004,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "3",
+            "1",
+            "0",
+            "4"
+          ]
+        },
+        "death_prematurity": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 6,
+          "uniqueness_ratio": 0.004,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "1",
+            "3",
+            "0",
+            "4"
+          ]
+        },
+        "death_sepsis": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 5,
+          "uniqueness_ratio": 0.004,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "1",
+            "3",
+            "0",
+            "4"
+          ]
+        },
+        "death_congenital": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 3,
+          "uniqueness_ratio": 0.002,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "1",
+            "0",
+            "2"
+          ]
+        },
+        "death_other": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 7,
+          "uniqueness_ratio": 0.005,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "1",
+            "3",
+            "5",
+            "2",
+            "4"
+          ]
+        },
+        "avg_gestational_age": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 21,
+          "uniqueness_ratio": 0.015,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "36.8",
+            "37.9",
+            "37.3",
+            "37.4",
+            "37.2"
+          ]
+        },
+        "preterm_births_28_32w": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 25,
+          "uniqueness_ratio": 0.018,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "6",
+            "3",
+            "9",
+            "14",
+            "2"
+          ]
+        },
+        "preterm_births_32_37w": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 58,
+          "uniqueness_ratio": 0.041,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "23",
+            "8",
+            "30",
+            "50",
+            "13"
+          ]
+        },
+        "apgar_less_7_at_5min": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 33,
+          "uniqueness_ratio": 0.024,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "12",
+            "2",
+            "14",
+            "19",
+            "8"
+          ]
+        },
+        "birth_weight_less_2500g": {
+          "non_null": 1404,
+          "missing_pct": 0.0,
+          "nunique": 74,
+          "uniqueness_ratio": 0.053,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.001,
+          "sample_values": [
+            "50",
+            "12",
+            "54",
+            "70",
+            "11"
+          ]
+        }
+      }
+    },
+    "facilities.csv": {
+      "nrows": 117,
+      "ncols": 18,
+      "columns": [
+        "facility_id",
+        "facility_name",
+        "district",
+        "province",
+        "tier_level",
+        "gps_lat",
+        "gps_lon",
+        "nicu_available",
+        "nicu_beds",
+        "incubators_functional",
+        "incubators_total",
+        "radiant_warmers",
+        "phototherapy_units",
+        "cpap_machines",
+        "resuscitation_tables",
+        "kangaroo_care_space",
+        "electricity_reliable",
+        "backup_generator"
+      ],
+      "facility_id_candidates": [
+        {
+          "column": "facility_id",
+          "score": 7.5,
+          "reasons": [
+            "name_id_hints=2",
+            "id_value_rate=1.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=1.00"
+          ]
+        },
+        {
+          "column": "facility_name",
+          "score": 2.0,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=1.00"
+          ]
+        },
+        {
+          "column": "gps_lat",
+          "score": 1.5,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=1.00"
+          ]
+        },
+        {
+          "column": "gps_lon",
+          "score": 1.5,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=1.00"
+          ]
+        },
+        {
+          "column": "district",
+          "score": 1.256,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.26"
+          ]
+        }
+      ],
+      "join_suggestions_against_facilities": [],
+      "patient_volume_candidates": [
+        {
+          "column": "gps_lat",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "gps_lon",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "nicu_beds",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "incubators_functional",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "incubators_total",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "radiant_warmers",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "phototherapy_units",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "maternal_indicator_candidates": [
+        {
+          "column": "gps_lat",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "gps_lon",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "nicu_beds",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "incubators_functional",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "incubators_total",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "radiant_warmers",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "phototherapy_units",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "reporting_performance_candidates": [
+        {
+          "column": "gps_lat",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "gps_lon",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "nicu_beds",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "incubators_functional",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "incubators_total",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "radiant_warmers",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "phototherapy_units",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "column_profiles": {
+        "facility_id": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 1.0,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 1.0,
+          "sample_values": [
+            "NYA001",
+            "NYA002",
+            "NYA003",
+            "NYA004",
+            "NYA005"
+          ]
+        },
+        "facility_name": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 1.0,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Nyarugenge Hospital",
+            "Nyarugenge Health Center 1",
+            "Nyarugenge Health Center 2",
+            "Nyarugenge Health Center 3",
+            "Nyarugenge Health Center 4"
+          ]
+        },
+        "district": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 30,
+          "uniqueness_ratio": 0.256,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Nyarugenge",
+            "Gasabo",
+            "Kicukiro",
+            "Huye",
+            "Nyanza"
+          ]
+        },
+        "province": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 5,
+          "uniqueness_ratio": 0.043,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Kigali City",
+            "Southern",
+            "Northern",
+            "Eastern",
+            "Western"
+          ]
+        },
+        "tier_level": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 4,
+          "uniqueness_ratio": 0.034,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Provincial",
+            "Health Center",
+            "Referral",
+            "District"
+          ]
+        },
+        "gps_lat": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 1.0,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "-2.6323",
+            "-1.7648",
+            "-2.5888",
+            "-2.8699",
+            "-1.5397"
+          ]
+        },
+        "gps_lon": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 1.0,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "30.0791",
+            "30.4147",
+            "30.2792",
+            "29.2867",
+            "29.6363"
+          ]
+        },
+        "nicu_available": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 3,
+          "uniqueness_ratio": 0.026,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Partial",
+            "No",
+            "Yes"
+          ]
+        },
+        "nicu_beds": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 9,
+          "uniqueness_ratio": 0.077,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "0",
+            "19",
+            "25",
+            "8",
+            "11"
+          ]
+        },
+        "incubators_functional": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 11,
+          "uniqueness_ratio": 0.094,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "6",
+            "1",
+            "5",
+            "13",
+            "3"
+          ]
+        },
+        "incubators_total": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 14,
+          "uniqueness_ratio": 0.12,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "8",
+            "2",
+            "9",
+            "14",
+            "1"
+          ]
+        },
+        "radiant_warmers": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 9,
+          "uniqueness_ratio": 0.077,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "5",
+            "1",
+            "6",
+            "8",
+            "3"
+          ]
+        },
+        "phototherapy_units": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 8,
+          "uniqueness_ratio": 0.068,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "1",
+            "5",
+            "10",
+            "0"
+          ]
+        },
+        "cpap_machines": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 6,
+          "uniqueness_ratio": 0.051,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "0",
+            "5",
+            "3",
+            "1"
+          ]
+        },
+        "resuscitation_tables": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 4,
+          "uniqueness_ratio": 0.034,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "5",
+            "1",
+            "3"
+          ]
+        },
+        "kangaroo_care_space": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 3,
+          "uniqueness_ratio": 0.026,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Partial",
+            "No",
+            "Yes"
+          ]
+        },
+        "electricity_reliable": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 2,
+          "uniqueness_ratio": 0.017,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": true,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "backup_generator": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 2,
+          "uniqueness_ratio": 0.017,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": true,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Yes",
+            "No"
+          ]
+        }
+      }
+    },
+    "governance.csv": {
+      "nrows": 117,
+      "ncols": 11,
+      "columns": [
+        "facility_id",
+        "newborn_protocol_exists",
+        "protocol_last_updated",
+        "death_audits_conducted_pct",
+        "staff_trained_on_protocol_pct",
+        "quality_improvement_active",
+        "supervision_visits_quarterly",
+        "hmis_reporting_completeness",
+        "bag_mask_ventilation_competency",
+        "thermal_care_protocol_compliance",
+        "infection_prevention_score"
+      ],
+      "facility_id_candidates": [
+        {
+          "column": "facility_id",
+          "score": 7.5,
+          "reasons": [
+            "name_id_hints=2",
+            "id_value_rate=1.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=1.00"
+          ]
+        },
+        {
+          "column": "newborn_protocol_exists",
+          "score": 1.026,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.03"
+          ]
+        },
+        {
+          "column": "quality_improvement_active",
+          "score": 1.017,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.02"
+          ]
+        },
+        {
+          "column": "death_audits_conducted_pct",
+          "score": 0.979,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.48"
+          ]
+        },
+        {
+          "column": "staff_trained_on_protocol_pct",
+          "score": 0.953,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.45"
+          ]
+        }
+      ],
+      "join_suggestions_against_facilities": [
+        {
+          "facilities_column": "facility_id",
+          "other_column": "facility_id",
+          "match_rate": 1.0
+        }
+      ],
+      "patient_volume_candidates": [
+        {
+          "column": "supervision_visits_quarterly",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "maternal_indicator_candidates": [
+        {
+          "column": "supervision_visits_quarterly",
+          "score": 1.25,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "reporting_performance_candidates": [
+        {
+          "column": "death_audits_conducted_pct",
+          "score": 5.0,
+          "reasons": [
+            "name_hints=2",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "hmis_reporting_completeness",
+          "score": 5.0,
+          "reasons": [
+            "name_hints=2",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "staff_trained_on_protocol_pct",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "infection_prevention_score",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "supervision_visits_quarterly",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "bag_mask_ventilation_competency",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "thermal_care_protocol_compliance",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "column_profiles": {
+        "facility_id": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 1.0,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 1.0,
+          "sample_values": [
+            "NYA001",
+            "NYA002",
+            "NYA003",
+            "NYA004",
+            "NYA005"
+          ]
+        },
+        "newborn_protocol_exists": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 3,
+          "uniqueness_ratio": 0.026,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Yes",
+            "No",
+            "Outdated"
+          ]
+        },
+        "protocol_last_updated": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 42,
+          "uniqueness_ratio": 0.359,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.88,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2025-03",
+            "Never",
+            "2024-01",
+            "2022-06",
+            "2022-08"
+          ]
+        },
+        "death_audits_conducted_pct": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 56,
+          "uniqueness_ratio": 0.479,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 1.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "63%",
+            "47%",
+            "74%",
+            "93%",
+            "19%"
+          ]
+        },
+        "staff_trained_on_protocol_pct": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 53,
+          "uniqueness_ratio": 0.453,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 1.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "48%",
+            "11%",
+            "54%",
+            "87%",
+            "22%"
+          ]
+        },
+        "quality_improvement_active": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 2,
+          "uniqueness_ratio": 0.017,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": true,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "supervision_visits_quarterly": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 4,
+          "uniqueness_ratio": 0.034,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "0",
+            "3",
+            "1"
+          ]
+        },
+        "hmis_reporting_completeness": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 42,
+          "uniqueness_ratio": 0.359,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 1.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "89%",
+            "70%",
+            "92%",
+            "96%",
+            "72%"
+          ]
+        },
+        "bag_mask_ventilation_competency": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 52,
+          "uniqueness_ratio": 0.444,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 1.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "52%",
+            "27%",
+            "63%",
+            "96%",
+            "17%"
+          ]
+        },
+        "thermal_care_protocol_compliance": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 49,
+          "uniqueness_ratio": 0.419,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 1.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "43%",
+            "13%",
+            "44%",
+            "76%",
+            "17%"
+          ]
+        },
+        "infection_prevention_score": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 47,
+          "uniqueness_ratio": 0.402,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 1.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "55%",
+            "40%",
+            "66%",
+            "83%",
+            "53%"
+          ]
+        }
+      }
+    },
+    "healthcare_workers.csv": {
+      "nrows": 117,
+      "ncols": 11,
+      "columns": [
+        "facility_id",
+        "total_nurses",
+        "neonatal_trained_nurses",
+        "midwives",
+        "obstetricians",
+        "pediatricians",
+        "neonatologists",
+        "anesthetists",
+        "last_neonatal_training_date",
+        "staff_per_delivery_2024",
+        "night_shift_coverage"
+      ],
+      "facility_id_candidates": [
+        {
+          "column": "facility_id",
+          "score": 7.5,
+          "reasons": [
+            "name_id_hints=2",
+            "id_value_rate=1.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=1.00"
+          ]
+        },
+        {
+          "column": "last_neonatal_training_date",
+          "score": 1.333,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.33"
+          ]
+        },
+        {
+          "column": "total_nurses",
+          "score": 0.829,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.01",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.32"
+          ]
+        },
+        {
+          "column": "midwives",
+          "score": 0.654,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.15"
+          ]
+        },
+        {
+          "column": "neonatal_trained_nurses",
+          "score": 0.577,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.08"
+          ]
+        }
+      ],
+      "join_suggestions_against_facilities": [
+        {
+          "facilities_column": "facility_id",
+          "other_column": "facility_id",
+          "match_rate": 1.0
+        }
+      ],
+      "patient_volume_candidates": [
+        {
+          "column": "staff_per_delivery_2024",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "total_nurses",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatal_trained_nurses",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "midwives",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "obstetricians",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "pediatricians",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatologists",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "maternal_indicator_candidates": [
+        {
+          "column": "staff_per_delivery_2024",
+          "score": 3.25,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "obstetricians",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "total_nurses",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatal_trained_nurses",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "midwives",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "pediatricians",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatologists",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "reporting_performance_candidates": [
+        {
+          "column": "night_shift_coverage",
+          "score": 2.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=0.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "total_nurses",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatal_trained_nurses",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "midwives",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "obstetricians",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "pediatricians",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "neonatologists",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "column_profiles": {
+        "facility_id": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 1.0,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 1.0,
+          "sample_values": [
+            "NYA001",
+            "NYA002",
+            "NYA003",
+            "NYA004",
+            "NYA005"
+          ]
+        },
+        "total_nurses": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 37,
+          "uniqueness_ratio": 0.316,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.009,
+          "sample_values": [
+            "53",
+            "27",
+            "43",
+            "102",
+            "23"
+          ]
+        },
+        "neonatal_trained_nurses": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 9,
+          "uniqueness_ratio": 0.077,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "3",
+            "0",
+            "4",
+            "16",
+            "2"
+          ]
+        },
+        "midwives": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 18,
+          "uniqueness_ratio": 0.154,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "19",
+            "11",
+            "17",
+            "34",
+            "5"
+          ]
+        },
+        "obstetricians": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 8,
+          "uniqueness_ratio": 0.068,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2",
+            "0",
+            "3",
+            "9",
+            "10"
+          ]
+        },
+        "pediatricians": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 6,
+          "uniqueness_ratio": 0.051,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "1",
+            "0",
+            "3",
+            "7",
+            "8"
+          ]
+        },
+        "neonatologists": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 3,
+          "uniqueness_ratio": 0.026,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "0",
+            "3",
+            "2"
+          ]
+        },
+        "anesthetists": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 6,
+          "uniqueness_ratio": 0.051,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "3",
+            "1",
+            "5",
+            "0",
+            "4"
+          ]
+        },
+        "last_neonatal_training_date": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 39,
+          "uniqueness_ratio": 0.333,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.59,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2025-03",
+            "Never",
+            "2023-08",
+            "2025-04",
+            "2023-01"
+          ]
+        },
+        "staff_per_delivery_2024": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 3,
+          "uniqueness_ratio": 0.026,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "0.02",
+            "0.01",
+            "0.03"
+          ]
+        },
+        "night_shift_coverage": {
+          "non_null": 54,
+          "missing_pct": 0.538,
+          "nunique": 2,
+          "uniqueness_ratio": 0.037,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Full",
+            "Partial"
+          ]
+        }
+      }
+    },
+    "operations.csv": {
+      "nrows": 117,
+      "ncols": 13,
+      "columns": [
+        "facility_id",
+        "avg_referral_time_hrs",
+        "referrals_out_monthly",
+        "referrals_in_monthly",
+        "oxygen_cylinders_available",
+        "oxygen_concentrators",
+        "oxygen_plant",
+        "ambulance_available",
+        "kangaroo_care_practiced",
+        "essential_drugs_stockouts_days",
+        "antibiotics_available",
+        "surfactant_available",
+        "referral_feedback_rate"
+      ],
+      "facility_id_candidates": [
+        {
+          "column": "facility_id",
+          "score": 7.5,
+          "reasons": [
+            "name_id_hints=2",
+            "id_value_rate=1.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=1.00"
+          ]
+        },
+        {
+          "column": "antibiotics_available",
+          "score": 1.034,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.03"
+          ]
+        },
+        {
+          "column": "kangaroo_care_practiced",
+          "score": 1.026,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.03"
+          ]
+        },
+        {
+          "column": "oxygen_plant",
+          "score": 1.017,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.02"
+          ]
+        },
+        {
+          "column": "ambulance_available",
+          "score": 1.017,
+          "reasons": [
+            "name_id_hints=0",
+            "id_value_rate=0.00",
+            "missing_pct=0.00",
+            "uniqueness_ratio=0.02"
+          ]
+        }
+      ],
+      "join_suggestions_against_facilities": [
+        {
+          "facilities_column": "facility_id",
+          "other_column": "facility_id",
+          "match_rate": 1.0
+        }
+      ],
+      "patient_volume_candidates": [
+        {
+          "column": "avg_referral_time_hrs",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "referrals_out_monthly",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "referrals_in_monthly",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "referral_feedback_rate",
+          "score": 1.5,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "oxygen_cylinders_available",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "oxygen_concentrators",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "essential_drugs_stockouts_days",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "maternal_indicator_candidates": [
+        {
+          "column": "antibiotics_available",
+          "score": 2.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=0.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "avg_referral_time_hrs",
+          "score": 1.25,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "referrals_out_monthly",
+          "score": 1.25,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "referrals_in_monthly",
+          "score": 1.25,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "oxygen_cylinders_available",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "oxygen_concentrators",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "essential_drugs_stockouts_days",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "reporting_performance_candidates": [
+        {
+          "column": "referral_feedback_rate",
+          "score": 3.0,
+          "reasons": [
+            "name_hints=1",
+            "numeric_rate=0.00",
+            "percent_rate=1.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "avg_referral_time_hrs",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "referrals_out_monthly",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "referrals_in_monthly",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "oxygen_cylinders_available",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "oxygen_concentrators",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        },
+        {
+          "column": "essential_drugs_stockouts_days",
+          "score": 1.0,
+          "reasons": [
+            "name_hints=0",
+            "numeric_rate=1.00",
+            "percent_rate=0.00",
+            "binary_like=False"
+          ]
+        }
+      ],
+      "column_profiles": {
+        "facility_id": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 117,
+          "uniqueness_ratio": 1.0,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 1.0,
+          "sample_values": [
+            "NYA001",
+            "NYA002",
+            "NYA003",
+            "NYA004",
+            "NYA005"
+          ]
+        },
+        "avg_referral_time_hrs": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 33,
+          "uniqueness_ratio": 0.282,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "2.1",
+            "2.6",
+            "2.9",
+            "0.6",
+            "2.3"
+          ]
+        },
+        "referrals_out_monthly": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 25,
+          "uniqueness_ratio": 0.214,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "23",
+            "26",
+            "4",
+            "15",
+            "28"
+          ]
+        },
+        "referrals_in_monthly": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 34,
+          "uniqueness_ratio": 0.291,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "30",
+            "8",
+            "21",
+            "84",
+            "4"
+          ]
+        },
+        "oxygen_cylinders_available": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 16,
+          "uniqueness_ratio": 0.137,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "10",
+            "1",
+            "14",
+            "20",
+            "3"
+          ]
+        },
+        "oxygen_concentrators": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 8,
+          "uniqueness_ratio": 0.068,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "5",
+            "2",
+            "11",
+            "0",
+            "1"
+          ]
+        },
+        "oxygen_plant": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 2,
+          "uniqueness_ratio": 0.017,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": true,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "No",
+            "Yes"
+          ]
+        },
+        "ambulance_available": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 2,
+          "uniqueness_ratio": 0.017,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": true,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "No",
+            "Yes"
+          ]
+        },
+        "kangaroo_care_practiced": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 3,
+          "uniqueness_ratio": 0.026,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Partial",
+            "No",
+            "Yes"
+          ]
+        },
+        "essential_drugs_stockouts_days": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 32,
+          "uniqueness_ratio": 0.274,
+          "numeric_rate": 1.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "14",
+            "10",
+            "5",
+            "1",
+            "35"
+          ]
+        },
+        "antibiotics_available": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 4,
+          "uniqueness_ratio": 0.034,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "Usually",
+            "Rarely",
+            "Always",
+            "Sometimes"
+          ]
+        },
+        "surfactant_available": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 2,
+          "uniqueness_ratio": 0.017,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 0.0,
+          "binary_like": true,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "No",
+            "Yes"
+          ]
+        },
+        "referral_feedback_rate": {
+          "non_null": 117,
+          "missing_pct": 0.0,
+          "nunique": 45,
+          "uniqueness_ratio": 0.385,
+          "numeric_rate": 0.0,
+          "datetime_rate": 0.0,
+          "percent_rate": 1.0,
+          "binary_like": false,
+          "id_value_rate": 0.0,
+          "sample_values": [
+            "70%",
+            "26%",
+            "53%",
+            "91%",
+            "23%"
+          ]
+        }
+      }
+    }
+  },
+  "cross_file": {
+    "common_columns_all_files": [
+      "facility_id"
+    ],
+    "columns_with_id_like_names": {
+      "clinical_neonatal.csv": [
+        "facility_id"
+      ],
+      "facilities.csv": [
+        "facility_id"
+      ],
+      "governance.csv": [
+        "facility_id"
+      ],
+      "healthcare_workers.csv": [
+        "facility_id"
+      ],
+      "operations.csv": [
+        "facility_id"
+      ]
+    }
+  }
+}
